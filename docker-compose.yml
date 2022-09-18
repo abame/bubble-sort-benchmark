@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  php:
+    build:
+      context: ./php
+    command: php /var/www/html/index.php
+    volumes:
+      - ./php:/var/www/html
+  node:
+    build:
+      context: ./nodejs
+    command: node index.js
+    volumes:
+      - ./nodejs:/usr/app
+  python:
+    build:
+      context: ./python
+    command: python index.py
+    volumes:
+      - ./python:/usr/app
+  golang:
+    build:
+      context: ./golang
+    volumes:
+      - ./golang:/usr/app
