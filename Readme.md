@@ -1,4 +1,11 @@
-# PHP vs Node.js vs Python vs Golang Benchmark
+# Bubble Sort Benchmark
+
+## Programming Languages
+
+* Node.js
+* Python
+* Golang
+* PHP
 
 ***
 In order to use this you need docker and run the docker-compose file and check the execution time of the script for each which is using a bubble sort algorithm on an array of 10000 random generated numbers.
